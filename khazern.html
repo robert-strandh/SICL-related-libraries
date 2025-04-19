@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE>Khazern: An implementation of the <tt>loop</tt> macro</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>Khazern: An implementation of the <tt>loop</tt> macro</H1>
+
+<H2>Description</H2>
+
+<p>
+
+This library provides a complete implementation of the
+standard <tt>loop</tt> macro.
+
+</p>
+
+<p>
+
+  Contrary to some other implementations of the <tt>loop</tt> macro,
+  Khazern makes sure that the loop variable in a clause such
+  as <tt>for i from a to b</tt> takes on values only in the closed
+  interval between <tt>a</tt> and <tt>b</tt>.  Other implementations
+  of the <tt>loop</tt> macro will allow the loop variable
+  (here <tt>i</tt>) to have the value <tt>b+1</tt>.  With Khazern, it
+  is therefore possible to add a reasonable-looking type declaration,
+  as in <tt>for i of-type (integer a b) from a to b</tt> that will not
+  be violated at run time.
+
+</p>
+
+<H2>Requirements</H2>
+
+<p>
+
+Depends on <a href="acclimation.html">Acclimation</a>.  This library
+uses instances of standard classes to represent <tt>loop</tt> clauses,
+so CLOS is required. 
+
+</p>
+
+<H2>Maintainers</H2>
+
+<p>
+
+  Currently maintained by Tarn W. Burton.
+
+</p>
+
+<H2>Possible improvements</H2>
+
+<p>
+
+Clauses are parsed using a home-grown parsing technique that resembles
+<a href="https://en.wikipedia.org/wiki/Parser_combinator"> parser
+  combinators</a>, but without the full backtracking capabilities.  With
+this technique, it is hard to provide relevant errors when parsing
+fails.  The use of some other parsing technique could be
+investigated. 
+
+</p>
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>

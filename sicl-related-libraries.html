@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<TITLE>SICL-related libraries</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>SICL-related libraries</H1>
+
+<p>
+
+We provide a list of projects that were either created as part of the
+SICL project, that were extracted and improved from other projects, or
+that are used as an essential part of the SICL project.
+
+</p>
+
+<p>
+
+The projects are located either among the
+<a href="https://github.com/s-expressionists"> s-expressionists
+  repositories</a> or among the repositories at
+<a href="https://github.com/robert-strandh"> Robert Strandh's
+  collection of repositories</a>.  The aim is to migrate all libraries
+  to the s-expressionists site.
+
+</p>  
+
+<p>
+
+  Definitions:
+
+  <ul>
+
+    <li>
+
+    The term <i>extrinsic</i> means that a library can be loaded into
+    an existing Common Lisp implementation, without altering the
+    existing system code of that implementation, and it can be used
+    and tested as any other externally provided code.
+
+    </li>
+
+    <li>
+
+    The term <i>intrinsic</i> means that a library can be used as part
+    of a new Common Lisp implementation, or it can be used to replace
+    the equivalent code in an existing Common Lisp implementation.  In
+    the latter case, the reason for replacing existing code could be
+    aspects such as performance, maintainability, or documentation. 
+
+    </li>
+
+  </ul>
+
+</p>
+
+<H2>Libraries related to the standard</H2>
+
+<p>
+
+In this section, we provide a list of libraries, each of which
+provides an implementation of some part of the Common Lisp standard,
+typically a single dictionary.
+
+</p>
+
+</p>
+
+<ul>
+  <li><a href="khazern.html">Khazern: An implementation of the <tt>loop</tt> macro</a>.
+
+    <ul>
+
+      <li>
+        Can be used extrinsically or intrinsically.  
+      </li>
+
+      <li>
+
+        Uses instances of standard classes to represent clauses, so
+        CLOS is required for this library.
+
+      </li>
+
+      <li>
+
+        Complete, but lacks documentation.
+
+      </li>
+
+      <li>
+
+        Includes an ANSI-test suite, and it passes all tests.
+
+      </li>
+
+      <li>
+
+        Depends on <a href="acclimation.html">Acclimation</a>.
+
+      </li>
+
+      <li>
+
+        Currently maintained by Tarn W. Burton.
+
+      </li>
+
+    </ul>
+
+  </li>
+</ul>
+
+<H2>Other libraries</H2>
+
+<p>
+
+In this section, we provide a list of libraries that provide support
+for the creation of Common Lisp implementations, but that do not
+provide code that is directly related to the Common Lisp standard.
+
+
+</p>
+
+</p>
+
+<ul>
+  <li><a href="ctype.html">ctype: An implementation of the Common Lisp type system</a>.
+  </li>
+</ul>
+
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>
