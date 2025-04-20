@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<TITLE>Eclector: An implementation of the Common Lisp reader</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>Eclector: An implementation of the Common Lisp reader</H1>
+
+<H2>Description</H2>
+
+<p>
+
+  This library provides a complete implementation of the
+  standard <tt>read</tt> function and related functions such
+  a <tt>read-from-string</tt>, <tt>read-preserving-whitespace</tt>, <tt>read-delimited-list</tt>.
+
+</p>
+
+<p>
+
+  Eclector is highly configurable.  Client code can alter how tokens
+  are parsed, how numbers are constructed, etc.
+
+</p>
+
+<p>
+
+  In addition to creating ordinary S-expressions as a result of
+  reading sequences of characters, Eclector can also
+  produce <a href="concrete-syntax-tree.html">Concrete Syntax Trees
+  (CSTs)</a>.
+
+</p>
+
+<H2>Requirements</H2>
+
+<p>
+
+  Depends
+  on <a href="https://gitlab.common-lisp.net/alexandria/alexandria">alexandria</a>,
+  <a href="https://github.com/pcostanza/closer-mop">Closer
+    MOP</a>, and
+  <a href="acclimation.html">Acclimation</a>.
+
+</p>
+
+<p>
+
+  This library uses instances of standard classes to represent the
+  readtable and other important objects.  Uses generic functions for
+  configuration.  Therefore, CLOS is required for this library.
+
+
+</p>
+
+<H2>Maintainers</H2>
+
+<p>
+
+  Currently maintained by Jan Moringen.
+
+</p>
+
+<H2>Possible improvements</H2>
+
+<p>
+
+</p>
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>
