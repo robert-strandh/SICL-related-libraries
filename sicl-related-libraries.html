@@ -565,6 +565,149 @@ typically a single dictionary.
     </ul>
 
   </li>
+  <!------------------------------------------------------------>
+  <li><a href="clostrophilia.html">Clostrophilia: An implementation of
+  the CLOS MOP</a>
+
+    <ul>
+
+      <li>
+        Can be used only intrinsically for now.
+      </li>
+
+      <li>
+
+        Complete.  Client code supplies functions controlling
+        representation, such as <tt>standard-instance-access</tt>. 
+        Includes code for fast generic dispatch.
+
+      </li>
+
+
+      <li>
+
+        No test suite, but extensively tested by being used.
+
+      </li>
+
+      <li>
+
+        Depends on <a href="ecclesia.html">Ecclesia</a>.
+
+      </li>
+
+      <li>
+
+        Currently maintained by Robert Strandh.
+
+      </li>
+
+    </ul>
+
+  </li>
+  <!------------------------------------------------------------>
+  <li><a href="futhark.html">Futhark: Functions in the Strings dictionary</a>
+
+    <ul>
+
+      <li>
+        Can be used only intrinsically for now.
+      </li>
+
+      <li>
+
+        Does not use standard classes.  Defines <tt>string</tt>
+        and <tt>stringp</tt> as generic functions, but those
+        definitions could be replaced.
+
+      </li>
+
+      <li>
+
+        Complete.  Extensive documentation strings.
+
+      </li>
+
+      <li>
+
+        Defines compiler macros for functions that can benefit from
+        them. 
+
+      </li>
+
+
+      <li>
+
+        Includes an ANSI-test suite.
+
+      </li>
+
+      <li>
+
+        The intrinsic system has no dependencies.  The extrinsic
+        system depends on the extrinsic system
+        of <a href="constrictor.html">Constrictor</a>
+
+      </li>
+
+      <li>
+
+        Currently maintained by Robert Strandh.
+
+      </li>
+
+    </ul>
+
+  </li>
+  <!------------------------------------------------------------>
+  <li><a href="cyclosis.html">Cyclosis: An implementation of Common
+  Lisp streams</a>
+
+    <ul>
+
+      <li>
+        Can be used extrinsically or intrinsically.
+      </li>
+
+      <li>
+
+        Depends
+        on <a href="https://gitlab.common-lisp.net/alexandria/alexandria">alexandria</a>.
+        Uses standard classes to define stream classes.  Uses generic
+        functions to define stream functions.  So CLOS is required.
+
+      </li>
+
+      <li>
+
+        Needs more external formats added to the transcoding interface
+        for external formats. 
+
+      </li>
+
+      <li>
+
+        Contains some documentation strings.
+
+      </li>
+
+
+      <li>
+
+        Includes an ANSI-test suite, where everything passes.
+
+      </li>
+
+
+      <li>
+
+        Currently maintained by Tarn W. Burton.
+
+      </li>
+
+    </ul>
+
+  </li>
 </ul>
 
 <H2>Other libraries</H2>
