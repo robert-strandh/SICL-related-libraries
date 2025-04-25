@@ -12,9 +12,7 @@
 
   This library provides implementations of the Common Lisp type
   system, and in particular of the two essential functions
-  <tt>typep</tt> and <tt>subtypep</tt>.  It works by canonicalizing
-  type specifiers and representing them as instances of standard
-  classes.
+  <tt>typep</tt> and <tt>subtypep</tt>.  
 
 </p>
 
