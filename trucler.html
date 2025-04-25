@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>Trucler: Compile-time lexical environments</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>Trucler: Compile-time lexical environments</H1>
+
+<H2>Description</H2>
+
+<p>
+
+  This library provides functionality for compile-time lexical
+  environments.  It can be seen as an improvement (complete,
+  extensible) over the environment functions in section 8.5 of "Common
+  Lisp the Language, Second Edition".  It presents a uniform protocol
+  for querying and augmenting environment, but it supports several
+  possible underlying representations of environment, so that it can
+  be used by existing Common Lisp implementations.  Only two
+  implementions are currently supported, namely the <i>native</i>
+  implementation that can be useed in a new Common Lisp
+  implementation, and an implementation compatible with SBCL.
+
+
+</p>
+
+<p>
+
+  This library contains documentation strings for most of its
+  functions and classes, and it comes with a test suite.
+
+</p>
+
+<H2>Requirements</H2>
+
+<p>
+
+  Depends on <a href="acclimation.html">Acclimation</a>.  Uses
+  standard classes and generic functions, so CLOS is rquired.
+
+</p>
+
+<H2>Maintainers</H2>
+
+<p>
+
+  Currently maintained by Tarn W. Burton.
+
+</p>
+
+<H2>Possible improvements</H2>
+
+<p>
+
+  Add support for other existing Common Lisp implementations
+
+</p>
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>
