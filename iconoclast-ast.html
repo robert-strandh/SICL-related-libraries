@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>Iconoclast (AST): AST representations of all special forms and all standard macro forms</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>Iconoclast (AST): AST representations of all special forms and all standard macro forms</H1>
+
+<H2>Description</H2>
+
+<p>
+
+  This library defines standard classes that allow the representation
+  of any Common Lisp form as an abstract syntax tree (AST). 
+
+</p>
+
+
+<H2>Requirements</H2>
+
+<p>
+
+  This library does not depend on any other library, but it uses
+  standard classes and generic functions, so CLOS is required.
+
+</p>
+
+<H2>Maintainers</H2>
+
+<p>
+
+  Currently maintained by Robert Strandh
+
+</p>
+
+<H2>Possible improvements</H2>
+
+<p>
+
+  AST classses contain information about the <i>cardinality</i> of its
+  children, where "1" means a single AST child, "?" means either NIL
+  or a single AST child, and "*" means a list of AST children.
+  However, there are slots in AST classes that represent cross-links
+  in the AST "tree", and there are cases where such links should not
+  be traversed.  One possible improvement would be to define a new
+  cardinality, say "0", to indicate such links.
+
+</p>
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>
