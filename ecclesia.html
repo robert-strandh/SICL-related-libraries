@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE>Ecclesia: Code utilities</TITLE>
+<LINK rel="stylesheet" type="text/css" href="mm.css">
+</HEAD>
+<BODY>
+<H1>Ecclesia: Code utilities</H1>
+
+<H2>Description</H2>
+
+<p>
+
+  This library contains utilities for manipulating code in the form of
+  S-expressions.  In particular, in contains definitions
+  of <tt>parse-macro</tt>, <tt>parse-compiler-macro</tt>, <tt>parse-deftype</tt>
+  and <tt>parse-destructuring-bind</tt>.  It also contains code for
+  parsing different types of lambda lists.
+
+</p>
+
+
+<H2>Requirements</H2>
+
+<p>
+
+  Depends on <a href="acclimation.html">Acclimation</a>.
+
+</p>
+
+<H2>Maintainers</H2>
+
+<p>
+
+  Currently maintained by Robert Strandh
+
+</p>
+
+<H2>Possible improvements</H2>
+
+<p>
+
+  There are currently two versions of most functions for parsing
+  lambda lists, and by extension, also of <tt>parse-macro</tt>, etc.
+  The obsolete version uses instances of a standard class to represent
+  lambda lists, but then the order of appearance of the lambda-list
+  keywords is not preserved.  A more recent version uses
+  canonicalization that preserves this order.  Unfortunately, there
+  are clients using the obsolete version.
+
+</p>
+
+<HR>
+<address>
+robert.strandh@gmail.com
+</address>
+</BODY>
+</HTML>
